@@ -1,62 +1,323 @@
- qweqweqweqwe
- + 5454122
-## 123
-##   
-##
+> 区块中使用列表
+> 1. 第一项
+> 2. 第二项
+> + 第一项
+> + 第二项
+> + 第三项
+___
+* 第一项
+    > 菜鸟教程
+    > 学的不仅是技术更是梦想
+* 第二项
 
-# 导读<a name="ZH-CN_TOPIC_0000001152533331"></a>
+___
+- [x] 自定义MR评论模板
+- [x] 新增MR增删行数统计显示
+- [x] 提供返回label颜色的API
+- [ ] 新增门禁检查功能
+- [ ] 新增自定义群组功能
 
--   [系统类型](#section767218232110)
--   [文档导读](#section19810171681218)
+___
+这是一个`printf()` 函数
+___
+	1234
+    1234
+    56635
+___
+```javascript
+$(document).ready(function () {
+    alert('RUNOOB');
+});
+```
+___
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
 
-为了方便开发者正确获取内容，本导读基于OpenHarmony学习路径同时结合开发者具体业务对相关资料、资源进行了分类。
+___
+<style type="text/css">
+h1 { counter-reset: h2counter; }
+h2 { counter-reset: h3counter; }
+h3 { counter-reset: h4counter; }
+h4 { counter-reset: h5counter; }
+h5 { counter-reset: h6counter; }
+h6 { }
+h2:before {
+counter-increment: h2counter;
+content: counter(h2counter) ".\0000a0\0000a0";
+}
+h3:before {
+counter-increment: h3counter;
+content: counter(h2counter) "."
+counter(h3counter) ".\0000a0\0000a0";
+}
+h4:before {
+counter-increment: h4counter;
+content: counter(h2counter) "."
+counter(h3counter) "."
+counter(h4counter) ".\0000a0\0000a0";
+}
+h5:before {
+counter-increment: h5counter;
+content: counter(h2counter) "."
+counter(h3counter) "."
+counter(h4counter) "."
+counter(h5counter) ".\0000a0\0000a0";
+}
+h6:before {
+counter-increment: h6counter;
+content: counter(h2counter) "."
+counter(h3counter) "."
+counter(h4counter) "."
+counter(h5counter) "."
+counter(h6counter) ".\0000a0\0000a0";
+}
+</style>
+# C++ : 模板编程
+## 非类型模板参数(Nontype Template Parameter)
+### 非类型类模板参数(Nontype Class Template Parameter)
+使用者自己定义,但是每个模板实例都是不同的类型;也可以为模板参数提供默认值；
+___
 
-## 系统类型<a name="section767218232110"></a>
+这是一个链接 [链接](httpshttps://gitcode.com/GitCode/MarkdownTest/edit/test/other.md)
+___
 
-在正式学习OpenHarmony开发前，开发者需要先了解系统类型，方便后续根据自身业务匹配对应的系统及对应文档资源。
+<https://gitcode.com/GitCode/MarkdownTest/edit/test/other.md>
 
-OpenHarmony是一款面向全场景的开源分布式操作系统，采用组件化设计，支持在128KiB到xGiB RAM资源的设备上运行系统组件，设备开发者可基于目标硬件能力自由选择系统组件进行集成。
+___
 
-为了保证在不同硬件上集成的易用性，OpenHarmony当前定义了三种基础系统类型，设备开发者通过选择基础系统类型完成必选组件集配置后，便可实现其最小系统的开发。这三种基础系统类型的参考定义如下：
+* 第一项
+* 第二项
+* 第三项
 
--   轻量系统（mini system）
+___
 
-    面向MCU类处理器，例如Arm Cortex-M、RISC-V 32位的设备，硬件资源极其有限，支持的设备最小内存为128KiB，可以提供多种轻量级网络协议，轻量级的图形框架，以及丰富的IOT总线读写部件等。可支撑的产品如智能家居领域的连接类模组、传感器设备、穿戴类设备等。
++ 第一项
++ 第二项
++ 第三项
 
--   小型系统（small system）
+___
 
-    面向应用处理器，例如Arm Cortex-A的设备，支持的设备最小内存为1MiB，可以提供更高的安全能力、标准的图形框架、视频编解码的多媒体能力。可支撑的产品如智能家居领域的IP Camera、电子猫眼、路由器以及智慧出行域的行车记录仪等。
+- 第一项
+- 第二项
+- 第三项
 
--   标准系统（standard system）
+___
+1. 第一项
+2. 第二项
+3. 第三项
+___
 
-    面向应用处理器，例如Arm Cortex-A的设备，支持的设备最小内存为128MiB，可以提供增强的交互能力、3D GPU以及硬件合成能力、更多控件以及动效更丰富的图形能力、完整的应用框架。可支撑的产品如高端的冰箱显示屏。
+1. 第一项:
+    - 第一项嵌套的第一个元素
+    - 第一项嵌套的第二个元素
+2. 第二项:
+    - 第二项嵌套的第一个元素
+    - 第二项嵌套的第二个元素
+___
+
+$E = mc^2$
+$\sqrt{3x-1}+(1+x)^2$
+$$
+\begin{Bmatrix}
+   a & b \\
+   c & d
+\end{Bmatrix}
+$$
+
+___
+
+# Flow chart
+```mermaid
+graph TD
+A[Start] --> B;
+B -- Yes --> C[OK];
+C --> D[Rethink];
+D --> B;
+B -- No --> E[End];
+```
+___
+# Gantt chart
+```mermaid
+gantt
+dateFormat DD/MM/YY
+Task 1 :active, 09/04/18, 30/10/20
+Milestone 1 :milestone, 29/09/20, 1d
+Task 2 :active, 11/11/19, 19/10/20
+Milestone 2 :milestone, 30/09/20, 1d
+Task 3 :active, 18/02/19, 10/07/20
+Milestone 3 :milestone, 01/10/20, 1d
+Task 4 :active, 11/03/19, 04/08/20
+Milestone 4 :milestone, 11/10/19, 1d
+```
+___
+# Sequence chart
+
+```mermaid
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+John-->>Alice: Great!
+```
+___
+```mermaid
+gantt
+dateFormat s.SSS
+axisFormat %S.%L
+title PC Chrome 加载过程图
+点击订单页 : milestone, m1, 0.000,0
+加载HTML:active,m2,after m1,230ms
+加载CSS:crit,m3,after m2,1720ms
+渲染样式和出现loading:active,crit,m4,after m3,1050ms
+加载JS:crit,m5,after m4,2000ms
+解析JS:active,m6,after m5,240ms
+查询主接口:active,m7,after m6,300ms
+加载文字内容:active,m8,after m7,560ms
+加载图片内容:active,m9,after m8,600ms
+首屏完成 : milestone, m100, 6.800, 0
+```
+___
+
+* 第一项第一项第一项第一项第一项第一项第一项第一项
+* 第二项第二项第二项第二项第二项第二项第二项第二项
+* 第三项第三项第三项第三项第三项第三项第三项第三项
+
+___
+
+1. 第一项第一项第一项第一项第一项第一项第一项第一项第一项
+2. 第二项第二项第二项第二项第二项第二项第二项第二项第二项
+3. 第三项第三项第三项第三项第三项第三项第三项第三项第三项
+
+___
+*斜体文本*
+
+_斜体文本_
+___
+**粗体文本**
+
+__粗体文本__
+___
+***粗斜体文本***
+
+___粗斜体文本___
+___
+123
+***
+456
+* * *
+789
+___
+123
+---
+234
+
+---
+456
+- - -
+___
+123
+___
+456
+_ _ _
+___
+~~BAIDU.COM~~
+___
+<u>带下划线文本</u>
+___
+
+![image](120.jpg)
+
+![image](src/120.jpg)
+
+___
+
+![image](login.svg)
+
+___
+
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+___
+
+| 左对齐左对齐 | 左对齐左对齐 | 左对齐左对齐 |
+| :-----| :----- | :----- |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+
+___
+
+| 右对齐右对齐 | 右对齐右对齐 | 右对齐右对齐 |
+| ----:| ----: | ----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+___
+
+| 居中对齐居中对齐 | 居中对齐居中对齐 | 居中对齐居中对齐 |
+| :----:| :----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+
+___
+	tab
+    123
+___
+
+= 和 - 标记语法格式如下:
+
+我展示的是一级标题
+=================
+
+我展示的是二级标题
+-----------------
+___
+
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+
+___
+####### 这是一个七级标题
+___
 
 
-OpenHarmony也提供了一系列可选的系统组件，方便设备开发者按需配置，以支撑其特色功能的扩展或定制开发。系统将这些可选的系统组件组合为一系列描述为特性或功能的系统能力，以方便设备开发者理解和选择。
+ @startuml
+ class XSM_RECORD_INFO_S {
+ usRecLen : 记录长度
+ ucNumOfAttr : 应答字段数目
+ ucDiffType : 增量同步类型
+ pstFieldInfo : CFGI字段属性值
+ <font color=blue>syscfgMark : 系统配置记录标识
+ }
+ class XSM_QUERY_RSP_DATA_S {
+ usRecNum : 记录个数
+ pstRecInfo : 实际类型为XSM_RECORD_INFO_S，保存无效field/默认值去除或XMLCahche合并后的字段属性
+ ppvRecData : 上述记录后的数据信息
+ pstOriRecInfo : 保存的原始CFGI应答中的记录字段信息，实际仅用于OCYang场景
+ ppvOriRecData : 原始CFGI记录数据字段值，实际仅用于OCYang场景
+ }
+ class XSM_EDIT_OP_DATA_S {
+ ucNumOfAttr
+ ucNumOfClearAttr
+ userKeyNum
+ pucKeyIndex
+ pucAttrIndex
+ pucClearAttrIndex
+ pstDataValue
+ <font color=blue>syscfgMark : 系统配置记录标识
+ <font color=blue>sysfldNum : 动态默认值字段数
+ <font color=blue>dynAttrIndex : 动态默认值字段ID数组
+ }
+ XSM_QUERY_RSP_DATA_S o-left- XSM_RECORD_INFO_S : 聚合
+ XSM_EDIT_OP_DATA_S -up- XSM_RECORD_INFO_S : usage
+ @enduml
+```
+___
+  
 
-## 文档导读<a name="section19810171681218"></a>
-
-**表 1**  轻量和小型系统开发指导（参考内存<128MiB）
-
-| 学习路径        | 开发者业务                                                   | 相关文档                                                     |
-| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 了解OpenHarmony | 整体认知OpenHarmony                                          | -&nbsp;[OpenHarmony概述](https://gitee.com/openharmony)<br/>-&nbsp;[术语](../glossary.md) |
-| 获取开发资源    | 准备开发前相关资源                                           | -&nbsp;[获取源码](get-code/sourcecode-acquire.md)<br/>-&nbsp;[获取工具](get-code/gettools-acquire.md) |
-| 快速入门        | 快速熟悉OpenHarmony环境搭建、编译、烧录、调测、运行          | -&nbsp;[快速入门](quick-start/Readme-CN.md) |
-| 基础能力使用    | 使用OpenHarmony提供的基础能力                                | -&nbsp;[轻量系统内核开发指南](kernel/kernel-mini-overview.md)<br/>-&nbsp;[小型系统内核开发指南](kernel/kernel-small-overview.md)<br/>-&nbsp;[驱动开发指南](driver/driver-overview-foundation.md)<br/>-&nbsp;[子系统开发指南](subsystems/subsys-build-all.md)<br/>-&nbsp;[安全指南](security/security-guidelines-overall.md)<br/>-&nbsp;[隐私保护](security/security-privacy-protection.md) |
-| 进阶开发        | 结合系统能力开发智能设备                                     | -&nbsp;[WLAN连接类产品](guide/device-wlan-led-control.md)<br/>-&nbsp;[带屏摄像头类产品](guide/device-camera-control-overview.md) |
-| 移植适配        | -&nbsp;针对特定芯片做移植适配<br/>-&nbsp;对三方库进行移植适配<br/>-&nbsp;三方厂商移植案例<br/> | -&nbsp;[轻量系统芯片移植指导](porting/porting-minichip-overview.md)<br/>-&nbsp;[小型系统芯片移植指导](porting/porting-smallchip-prepare-needs.md)<br/>-&nbsp;[轻量和小型系统三方库移植指导](porting/porting-thirdparty-overview.md)<br/>   - [带屏解决方案之恒玄芯片移植案例](porting/porting-bes2600w-on-minisystem-display-demo.md)<br/>    - [Combo解决方案之ASR芯片移植案例](porting/porting-asr582x-combo-demo.md)<br/>    - [物联网解决方案之芯海cst85芯片移植案例](porting/porting-cst85f01-combo-demo.md)<br/>    - [轻量系统STM32F407芯片移植案例](porting/porting-stm32f407-on-minisystem-eth.md)<br/>    - [Combo解决方案之W800芯片移植案例](porting/porting-w800-combo-demo.md)<br/> - [小型设备STM32MP1芯片移植案例](porting/porting-stm32mp15xx-on-smallsystem.md) |
-| 贡献组件        | 为OpenHarmony贡献功能组件                                    | -&nbsp;[HPM&nbsp;Part&nbsp;介绍](hpm-part/hpm-part-about.md)<br/>-&nbsp;[HPM&nbsp;Part&nbsp;开发指导](hpm-part/hpm-part-development.md)<br/>-&nbsp;[HPM&nbsp;Part&nbsp;参考](hpm-part/hpm-part-reference.md) |
-| 参考            | 为开发者提供常见的问题解答、HDI接口参考和CMSIS API参考                | -&nbsp;[常见问题](faqs/faqs-overview.md)<br/>-&nbsp;[HDI接口参考](reference/hdi-apis/Readme-CN.md)-&nbsp;[CMSIS API参考](reference/kernel/cmsis/Readme-CN.md) |
-
-**表 2**  标准系统开发指导（参考内存≥128MiB）
-| 学习路径 | 开发者业务 | 相关文档 |
-| -------- | -------- | -------- |
-| 了解OpenHarmony | 整体认知OpenHarmony | -&nbsp;[OpenHarmony概述](https://gitee.com/openharmony)<br/>-&nbsp;[术语](../glossary.md) |
-| 获取开发资源 | 准备开发前相关资源 | -&nbsp;[获取源码](get-code/sourcecode-acquire.md)<br/>-&nbsp;[获取工具](get-code/gettools-acquire.md) |
-| 快速入门 | 快速熟悉OpenHarmony环境搭建、编译、烧录、调测、运行 | -&nbsp;[快速入门](quick-start/Readme-CN.md)|
-| 基础能力使用 | 使用OpenHarmony提供的基础能力 | -&nbsp;[内核开发指南](kernel/kernel-standard-overview.md)<br/>-&nbsp;[驱动开发指南](driver/driver-overview-foundation.md)<br/>-&nbsp;[子系统开发指南](subsystems/subsys-build-all.md)<br/>-&nbsp;[安全指南](security/security-guidelines-overall.md)<br/>-&nbsp;[隐私保护](security/security-privacy-protection.md) |
-| 进阶开发 | 结合系统能力开发智能设备 | -&nbsp;[时钟应用开发指导](guide/device-clock-guide.md)<br/>-&nbsp;[平台驱动开发示例](guide/device-driver-demo.md)<br/>-&nbsp;[外设驱动开发示例](guide/device-outerdriver-demo.md) |
-| 移植适配 | -&nbsp;针对特定芯片做移植适配 <br/>-&nbsp;快速移植OpenHarmony&nbsp;Linux内核的方法| -&nbsp;[标准系统芯片移植指导](porting/standard-system-porting-guide.md)<br/>-&nbsp;[一种快速移植OpenHarmony&nbsp;Linux内核的方法](porting/porting-linux-kernel.md)  <br/>-&nbsp;[标准系统方案之瑞芯微RK3568移植案例](porting/porting-dayu200-on_standard-demo.md) <br/>-&nbsp;[标准系统方案之瑞芯微RK3566移植案例](https://gitee.com/openharmony/vendor_kaihong/blob/master/khdvk_3566b/porting-khdvk_3566b-on_standard-demo.md)|
-| 贡献组件 | 为OpenHarmony贡献功能组件 | -&nbsp;[HPM&nbsp;Part&nbsp;介绍](hpm-part/hpm-part-about.md)<br/>-&nbsp;[HPM&nbsp;Part&nbsp;开发指导](hpm-part/hpm-part-development.md)<br/>-&nbsp;[HPM&nbsp;Part&nbsp;参考](hpm-part/hpm-part-reference.md) |
-| 参考 | 为开发者提供常见的问题解答和HDI接口参考   | -&nbsp;[常见问题](faqs/faqs-overview.md)<br/>-&nbsp;[HDI接口参考](reference/hdi-apis/Readme-CN.md)        |
