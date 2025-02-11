@@ -1,5 +1,12 @@
 <img src='image.png' width=300 height=640 />
 
+## 效果预览
+| Android平台                                                               | iOS平台                                                    | 鸿蒙平台                                                               |
+|-------------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------|
+| <img src=image.png width=300 height=640 />                  | <img src=image.png width=300 height=640 />   | <img src=image.png width=300 height=640 />              |
+| Android平台                                                               | iOS平台                                                    | 鸿蒙平台                                                               |
+| <img src=image.png width=300 height=640 />                  | <img src=image.png width=300 height=640 />   | <img src=image.png width=300 height=640 />              |
+
 ## 0. 版本介绍
 
 **该版本点分式版本号为`Cangjie 0.53.4` 。该版本条件编译语法进行了变更，对包管理重新设计，支持Unicode标识符，字符、字符串语法有变更，Char关键字改成Rune，删除自动微分语法；上下文感知宏API命名风格变更，udp支持ipv6地址，DateTime类型支持序列化和反序列化，提供了统一日志接口类，支持运行时注入logger实例；包管理工具适配了新包管理编译构建，调试器表达式计算支持场景更多；移除仓颉Tensor Boost，修复了若干bug，感谢各位开发者反馈。**
