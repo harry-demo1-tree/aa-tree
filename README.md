@@ -1,4 +1,4 @@
-<img src=image.png width=300 height=640 />
+<img src='image.png' width=300 height=640 />
 
 ## 0. 版本介绍
 
