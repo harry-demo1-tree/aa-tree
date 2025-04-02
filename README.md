@@ -27,7 +27,7 @@
 
 [跳到 网友推荐的](#网友推荐的)
 
-[跳到 SoulSoft框架](#SoulSoft框架)
+[跳到 SoulSoft框架](#SoulSOFT框架)
 
 [跳到 OpenCangjieCommunity 组织](#OpenCangjieCommunity)
 
